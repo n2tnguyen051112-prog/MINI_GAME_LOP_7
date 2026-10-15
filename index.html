@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#121847">
-<meta name="description" content="Trạm mini game lớp 7 Trường THCS Vĩnh An: GDCD 7, Lịch sử – Địa lí 7 và Tiếng Anh 7.">
+<meta name="description" content="Trạm mini game lớp 7 Trường THCS Vĩnh An: GDCD 7, Lịch sử – Địa lí 7, Tiếng Anh 7 và English Adventure 7.">
 <title>Trạm Mini Game Lớp 7 | THCS Vĩnh An</title>
 <style>
 :root{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:#1c2447;background:#111747;font-synthesis:none}
@@ -21,12 +21,14 @@ main{max-width:1020px;margin:0 auto;padding:24px 18px calc(54px + env(safe-area-
 h1{font-size:clamp(34px,6.9vw,60px);font-weight:900;line-height:1.1;letter-spacing:-.05em;margin:17px 0 0}
 h1 span{display:block;color:#ffe68b;margin-top:4px}
 .station{background:#f7f8ff;color:#222b52;border-radius:29px;padding:25px;box-shadow:0 25px 65px #040b2c75}
-.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
 .subject{display:flex;flex-direction:column;min-width:0;min-height:268px;padding:19px;border-radius:23px;text-decoration:none;border:2px solid transparent;box-shadow:0 6px 25px #28335412;transition:transform .15s ease,box-shadow .15s ease}
 .subject:hover{transform:translateY(-4px);box-shadow:0 14px 30px #26315424}
 .subject.gdcd{background:linear-gradient(150deg,#fff0f1,#ffe0ea);border-color:#ffc4d7}
 .subject.lsdl{background:linear-gradient(150deg,#e6f3ff,#d9eaff);border-color:#c0defd}
 .subject.eng{background:linear-gradient(150deg,#eafff4,#d8f8e7);border-color:#b8eed6}
+.subject.engbook{background:linear-gradient(150deg,#fff7df,#ffecd0);border-color:#f8d6aa}
+.engbook .play{background:#a06516}
 .emoji{display:grid;place-items:center;width:68px;height:68px;background:#ffffffb5;border-radius:21px;font-size:35px;margin-bottom:19px;box-shadow:0 4px 13px #27326a0d}
 h2{margin:0;font-size:clamp(20px,2.6vw,24px);font-weight:860;letter-spacing:-.035em;line-height:1.24;flex:1}
 .play{display:flex;align-items:center;justify-content:space-between;gap:10px;color:#fff;border-radius:13px;padding:13px 15px;font-size:15px;font-weight:850;margin-top:19px;min-height:49px}
@@ -72,6 +74,11 @@ h2{margin:0;font-size:clamp(20px,2.6vw,24px);font-weight:860;letter-spacing:-.03
         <span class="emoji" aria-hidden="true">🎧</span>
         <h2>Tiếng Anh 7</h2>
         <span class="play">Vào chơi <span class="arrow" aria-hidden="true">→</span></span>
+      </a>
+      <a class="subject engbook" href="https://n2tnguyen051112-prog.github.io/TIENG_ANH_7_SGK/" aria-label="Vào học Tiếng Anh 7 theo từng Unit sách giáo khoa">
+        <span class="emoji" aria-hidden="true">📚</span>
+        <h2>Tiếng Anh 7 – Học theo SGK</h2>
+        <span class="play">Vào học <span class="arrow" aria-hidden="true">→</span></span>
       </a>
     </div>
   </nav>
