@@ -3,80 +3,66 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#1d1d58">
-<meta name="description" content="Cổng mini game ôn tập lớp 7 Trường THCS Vĩnh An: Giáo dục công dân, Lịch sử và Địa lí, Tiếng Anh. Không cần tài khoản.">
+<meta name="theme-color" content="#121847">
+<meta name="description" content="Trạm mini game lớp 7 Trường THCS Vĩnh An: GDCD 7, Lịch sử – Địa lí 7 và Tiếng Anh 7.">
 <title>Trạm Mini Game Lớp 7 | THCS Vĩnh An</title>
 <style>
-:root{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:#202244;background:#0b1040;font-synthesis:none}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;background:radial-gradient(circle at 12% 6%,#6058e2 0,transparent 32%),radial-gradient(circle at 94% 20%,#1473a2 0,transparent 38%),linear-gradient(160deg,#141446 0%,#0b1039 100%)}
-a{color:inherit}a:focus-visible,button:focus-visible,summary:focus-visible{outline:4px solid #ffe16b;outline-offset:4px}
-.shell{max-width:980px;margin:0 auto;padding:24px 20px 56px;position:relative}
-.header{display:flex;align-items:center;justify-content:space-between;color:white;gap:12px}
-.brand{display:flex;align-items:center;gap:11px;font-weight:800;font-size:12px;letter-spacing:.065em}
-.brandmark{display:grid;place-items:center;width:44px;height:44px;flex:0 0 auto;background:white;border-radius:14px;font-size:25px;color:#3838a9;box-shadow:0 7px 22px #0a0e4060}
-.tag{font-size:11px;font-weight:750;color:#d7f4ff;background:#ffffff20;border:1px solid #ffffff35;padding:10px 12px;border-radius:50px;white-space:nowrap}
-.hero{margin:35px auto 29px;text-align:center;color:white;max-width:760px}
-.eyebrow{display:inline-flex;align-items:center;gap:6px;padding:9px 14px;border:1px solid #c0dcff55;background:#ffffff15;border-radius:30px;font-size:13px;font-weight:750;color:#e9f5ff}
-h1{font-size:clamp(34px,7vw,61px);line-height:1.08;letter-spacing:-.05em;margin:16px 0 12px;font-weight:900}
-h1 span{color:#ffe583}
-.sub{font-size:clamp(14px,2.5vw,17px);color:#e7edff;line-height:1.62;margin:0 auto;max-width:610px}
-.pills{display:flex;flex-wrap:wrap;justify-content:center;gap:9px;margin-top:20px}
-.pills span{font-size:12px;font-weight:700;color:#f5f7ff;background:#ffffff20;border:1px solid #ffffff29;border-radius:60px;padding:7px 12px}
-.board{background:#f7f8ff;border-radius:30px;padding:27px;box-shadow:0 26px 70px #090d2b78}
-.board-top{display:flex;justify-content:space-between;align-items:flex-end;gap:10px;margin-bottom:20px}
-h2{font-size:24px;letter-spacing:-.035em;margin:0 0 5px;color:#29264e}
-.section-sub{margin:0;font-size:14px;color:#697086;line-height:1.5}
-.count{border-radius:999px;background:#e7e9ff;color:#4746a1;padding:8px 12px;font-size:12px;font-weight:850;white-space:nowrap}
-.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}
-.subject{border-radius:24px;padding:19px;min-height:305px;display:flex;flex-direction:column;border:2px solid transparent;transition:transform .18s ease,box-shadow .18s ease;box-shadow:0 6px 24px #30347111}
-.subject:hover{transform:translateY(-5px);box-shadow:0 14px 27px #252f6430}
-.subject.gdcd{background:linear-gradient(155deg,#fff0ee,#ffe2ed);border-color:#ffcbd6}
-.subject.lsdl{background:linear-gradient(155deg,#e5f3ff,#d7efff);border-color:#bee1fc}
-.subject.eng{background:linear-gradient(155deg,#e9fff5,#d7fbe8);border-color:#bcebd1}
-.subject .emoji{display:grid;place-items:center;width:72px;height:72px;background:#fff9;border-radius:21px;font-size:39px;margin-bottom:13px;box-shadow:0 4px 15px #42427e15}
-.number{font-size:11px;font-weight:850;letter-spacing:.08em;color:#676885;margin-bottom:4px}
-h3{font-size:21px;letter-spacing:-.035em;line-height:1.14;margin:0 0 9px;color:#222747}
-.desc{font-size:13px;line-height:1.48;color:#555d72;margin:0 0 17px;flex-grow:1}
-.play{display:flex;align-items:center;justify-content:space-between;gap:10px;text-decoration:none;color:white;background:#6046b5;border-radius:14px;padding:14px 13px;font-weight:850;font-size:14px;min-height:49px}
-.gdcd .play{background:#d74b76}.lsdl .play{background:#2476bf}.eng .play{background:#1d9670}
-.play:hover{filter:brightness(.92)}.play .arrow{font-size:21px;line-height:1}
-.how{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:20px}
-.step{background:white;border:1px solid #e3e7f4;border-radius:17px;padding:14px 13px;font-size:13px;line-height:1.45;color:#505b71}
-.step strong{display:block;font-size:14px;color:#31365a;margin-bottom:5px}.step em{font-style:normal;font-size:20px}
-.support{margin-top:17px;background:#ececff;border-radius:16px;padding:14px 17px;font-size:12px;line-height:1.6;color:#545a81}
-.support strong{color:#343a7a}
-footer{color:#d9deff;text-align:center;margin:25px auto 0;font-size:12px;line-height:1.9}
-footer a{color:#f6e5ac;text-underline-offset:3px}
-@media(max-width:760px){.shell{padding:17px 12px 35px}.header{gap:5px}.brand{font-size:10px;letter-spacing:.02em}.brandmark{width:38px;height:38px;font-size:23px}.tag{font-size:10px;padding:8px}.hero{margin:28px auto 24px}.board{padding:17px;border-radius:23px}.grid{grid-template-columns:1fr;gap:13px}.subject{min-height:auto;padding:17px;display:grid;grid-template-columns:66px 1fr;column-gap:13px;align-items:start}.subject .emoji{width:62px;height:62px;font-size:33px;grid-row:1/4;margin:0}.subject .number{grid-column:2}.subject h3{grid-column:2;margin-bottom:5px}.subject .desc{grid-column:2;margin-bottom:15px}.subject .play{grid-column:1/3}.how{grid-template-columns:1fr}.board-top{align-items:center}h2{font-size:20px}.count{font-size:11px}.step{padding:10px 13px}}
+:root{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:#1c2447;background:#111747;font-synthesis:none}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;min-height:100vh;min-height:100svh;background:radial-gradient(circle at 10% 0%,#4949b4 0,transparent 34%),radial-gradient(circle at 100% 35%,#116a8b 0,transparent 40%),linear-gradient(145deg,#17164b,#0b143c);color:#fff}
+a{color:inherit}
+a:focus-visible{outline:4px solid #ffe16b;outline-offset:5px}
+main{max-width:1020px;margin:0 auto;padding:24px 18px calc(54px + env(safe-area-inset-bottom))}
+.brand{display:flex;align-items:center;justify-content:center;gap:10px;font-size:12px;letter-spacing:.045em;font-weight:800;color:#e0edff}
+.brand-icon{display:grid;place-items:center;width:35px;height:35px;background:#fff;color:#3543a0;border-radius:12px;font-size:22px;box-shadow:0 6px 22px #080e3466}
+.hero{text-align:center;margin:29px auto 30px}
+.eyebrow{display:inline-block;padding:7px 13px;border-radius:30px;border:1px solid #ffffff35;background:#ffffff16;color:#f0f5ff;font-size:12px;font-weight:750}
+h1{font-size:clamp(34px,6.9vw,60px);font-weight:900;line-height:1.1;letter-spacing:-.05em;margin:17px 0 0}
+h1 span{display:block;color:#ffe68b;margin-top:4px}
+.station{background:#f7f8ff;color:#222b52;border-radius:29px;padding:25px;box-shadow:0 25px 65px #040b2c75}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.subject{display:flex;flex-direction:column;min-width:0;min-height:268px;padding:19px;border-radius:23px;text-decoration:none;border:2px solid transparent;box-shadow:0 6px 25px #28335412;transition:transform .15s ease,box-shadow .15s ease}
+.subject:hover{transform:translateY(-4px);box-shadow:0 14px 30px #26315424}
+.subject.gdcd{background:linear-gradient(150deg,#fff0f1,#ffe0ea);border-color:#ffc4d7}
+.subject.lsdl{background:linear-gradient(150deg,#e6f3ff,#d9eaff);border-color:#c0defd}
+.subject.eng{background:linear-gradient(150deg,#eafff4,#d8f8e7);border-color:#b8eed6}
+.emoji{display:grid;place-items:center;width:68px;height:68px;background:#ffffffb5;border-radius:21px;font-size:35px;margin-bottom:19px;box-shadow:0 4px 13px #27326a0d}
+h2{margin:0;font-size:clamp(20px,2.6vw,24px);font-weight:860;letter-spacing:-.035em;line-height:1.24;flex:1}
+.play{display:flex;align-items:center;justify-content:space-between;gap:10px;color:#fff;border-radius:13px;padding:13px 15px;font-size:15px;font-weight:850;margin-top:19px;min-height:49px}
+.gdcd .play{background:#cc4770}.lsdl .play{background:#2476b9}.eng .play{background:#1b916a}
+.play .arrow{font-size:23px;line-height:1}
+@media(max-width:720px){main{padding:19px 13px calc(35px + env(safe-area-inset-bottom))}.hero{margin:25px auto 25px}.station{padding:14px;border-radius:23px}.grid{grid-template-columns:1fr;gap:12px}.subject{min-height:auto;padding:16px;display:grid;grid-template-columns:64px minmax(0,1fr);column-gap:14px;align-items:center}.emoji{width:62px;height:62px;font-size:32px;margin:0;grid-row:1/3}.subject h2{grid-column:2;font-size:20px}.subject .play{grid-column:1/3;margin-top:15px}.brand{font-size:11px}}
+@media(min-width:721px) and (max-width:840px){.station{padding:16px}.subject{padding:15px}.emoji{width:61px;height:61px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.subject{transition:none}.subject:hover{transform:none}}
 </style>
 </head>
 <body>
-<main class="shell">
- <header class="header">
-   <div class="brand"><div class="brandmark" aria-hidden="true">🎒</div><div>TRƯỜNG THCS VĨNH AN<br><span style="font-weight:550;color:#d7dcff">GÓC HỌC TẬP TRỰC TUYẾN</span></div></div>
-   <span class="tag">NĂM HỌC 2026–2027</span>
- </header>
- <section class="hero" aria-labelledby="title">
-   <span class="eyebrow">⭐ ÔN TẬP GIỮA HỌC KÌ I</span>
-   <h1 id="title">TRẠM MINI GAME <span>LỚP 7</span></h1>
-   <p class="sub">Học mà chơi, chơi mà nhớ bài! Chọn môn học yêu thích và chinh phục từng thử thách ngay trên điện thoại.</p>
-   <div class="pills"><span>📱 Không cần cài ứng dụng</span><span>🔓 Không cần đăng nhập</span><span>🎯 Chọn môn và chơi ngay</span></div>
- </section>
- <section class="board" aria-label="Chọn môn học">
-   <div class="board-top"><div><h2>Chọn môn học của em</h2><p class="section-sub">Ba hành trình kiến thức đang chờ khám phá!</p></div><span class="count">03 MINI GAME</span></div>
-   <div class="grid">
-    <article class="subject gdcd"><div class="emoji" aria-hidden="true">🤝</div><div class="number">THỬ THÁCH 01</div><h3>Giáo dục công dân 7</h3><p class="desc">Rèn luyện phẩm chất, xử lí tình huống, ôn kiến thức bằng câu hỏi tương tác.</p><a class="play" href="https://n2tnguyen051112-prog.github.io/GHK_I_GDCD_7/" aria-label="Vào chơi mini game Giáo dục công dân 7">🎮 Vào chơi <span class="arrow" aria-hidden="true">→</span></a></article>
-    <article class="subject lsdl"><div class="emoji" aria-hidden="true">🌍</div><div class="number">THỬ THÁCH 02</div><h3>Lịch sử – Địa lí 7</h3><p class="desc">Khám phá thời gian, không gian qua trắc nghiệm, tình huống Đúng/Sai và câu hỏi ôn tập.</p><a class="play" href="https://n2tnguyen051112-prog.github.io/GHK_I_LSDL_7/" aria-label="Vào chơi mini game Lịch sử và Địa lí 7">🧭 Vào chơi <span class="arrow" aria-hidden="true">→</span></a></article>
-    <article class="subject eng"><div class="emoji" aria-hidden="true">🎧</div><div class="number">THỬ THÁCH 03</div><h3>Tiếng Anh 7</h3><p class="desc">Luyện từ vựng, phát âm, đọc hiểu, nghe tiếng Anh và thử sức với phần viết.</p><a class="play" href="https://n2tnguyen051112-prog.github.io/GHK_I_TIENG_ANH_7/" aria-label="Vào chơi mini game Tiếng Anh 7">🚀 Vào chơi <span class="arrow" aria-hidden="true">→</span></a></article>
-   </div>
-   <div class="how" aria-label="Cách chơi">
-    <div class="step"><strong><em>①</em> Quét mã QR chung</strong>Mở trang này bằng camera điện thoại hoặc đường link giáo viên gửi.</div>
-    <div class="step"><strong><em>②</em> Chọn môn học</strong>Chạm nút “Vào chơi” dưới môn em muốn ôn tập.</div>
-    <div class="step"><strong><em>③</em> Chinh phục thử thách</strong>Hoàn thành câu hỏi, xem giải thích và luyện lại khi cần.</div>
-   </div>
-   <div class="support"><strong>💡 Gợi ý:</strong> Nếu muốn đổi môn, hãy quay lại trang này bằng nút Quay lại của trình duyệt. Nếu một môn báo lỗi hoặc chưa mở được, hãy báo giáo viên để kiểm tra trang trò chơi đó.</div>
- </section>
- <footer>TRẠM MINI GAME LỚP 7 · TRƯỜNG THCS VĨNH AN<br>Học tập chủ động · Khám phá mỗi ngày</footer>
+<main>
+  <header class="brand"><span class="brand-icon" aria-hidden="true">🎒</span><span>TRƯỜNG THCS VĨNH AN</span></header>
+  <section class="hero" aria-labelledby="title">
+    <span class="eyebrow">ÔN TẬP GIỮA HỌC KÌ I · 2026–2027</span>
+    <h1 id="title">TRẠM MINI GAME <span>LỚP 7</span></h1>
+  </section>
+  <nav class="station" aria-label="Các mini game môn học">
+    <div class="grid">
+      <a class="subject gdcd" href="https://n2tnguyen051112-prog.github.io/GHK_I_GDCD_7/" aria-label="Vào mini game Giáo dục công dân 7">
+        <span class="emoji" aria-hidden="true">🤝</span>
+        <h2>Giáo dục công dân 7</h2>
+        <span class="play">Vào chơi <span class="arrow" aria-hidden="true">→</span></span>
+      </a>
+      <a class="subject lsdl" href="https://n2tnguyen051112-prog.github.io/GHK_I_LSDL_7/" aria-label="Vào mini game Lịch sử – Địa lí 7">
+        <span class="emoji" aria-hidden="true">🌍</span>
+        <h2>Lịch sử – Địa lí 7</h2>
+        <span class="play">Vào chơi <span class="arrow" aria-hidden="true">→</span></span>
+      </a>
+      <a class="subject eng" href="https://n2tnguyen051112-prog.github.io/GHK_I_TIENG_ANH_7/" aria-label="Vào mini game Tiếng Anh 7">
+        <span class="emoji" aria-hidden="true">🎧</span>
+        <h2>Tiếng Anh 7</h2>
+        <span class="play">Vào chơi <span class="arrow" aria-hidden="true">→</span></span>
+      </a>
+    </div>
+  </nav>
 </main>
-</body></html>
+</body>
+</html>
