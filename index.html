@@ -1,88 +1,25 @@
 <!doctype html>
-<html data-subject="portal" lang="vi">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#121847">
-<meta name="description" content="Trạm mini game lớp 7 Trường THCS Vĩnh An: GDCD 7, Lịch sử – Địa lí 7, Tiếng Anh 7 và English Adventure 7.">
-<title>Trạm Mini Game Lớp 7 | THCS Vĩnh An</title>
+<html lang="vi" data-subject="portal"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#142144">
+<meta name="description" content="Trạm Mini Game lớp 7 Trường THCS Vĩnh An – danh sách trò chơi ôn tập theo môn học, dễ tìm kiếm và mở rộng.">
+<title>Trạm Mini Game Lớp 7 · THCS Vĩnh An</title>
 <style>
-:root{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:#1c2447;background:#111747;font-synthesis:none}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;min-height:100vh;min-height:100svh;background:radial-gradient(circle at 10% 0%,#4949b4 0,transparent 34%),radial-gradient(circle at 100% 35%,#116a8b 0,transparent 40%),linear-gradient(145deg,#17164b,#0b143c);color:#fff}
-a{color:inherit}
-a:focus-visible{outline:4px solid #ffe16b;outline-offset:5px}
-main{max-width:1020px;margin:0 auto;padding:24px 18px calc(54px + env(safe-area-inset-bottom))}
-.brand{display:flex;align-items:center;justify-content:center;gap:10px;font-size:12px;letter-spacing:.045em;font-weight:800;color:#e0edff}
-.brand-icon{display:grid;place-items:center;width:35px;height:35px;background:#fff;color:#3543a0;border-radius:12px;font-size:22px;box-shadow:0 6px 22px #080e3466}
-.hero{text-align:center;margin:29px auto 30px}
-.eyebrow{display:inline-block;padding:7px 13px;border-radius:30px;border:1px solid #ffffff35;background:#ffffff16;color:#f0f5ff;font-size:12px;font-weight:750}
-h1{font-size:clamp(34px,6.9vw,60px);font-weight:900;line-height:1.1;letter-spacing:-.05em;margin:17px 0 0}
-h1 span{display:block;color:#ffe68b;margin-top:4px}
-.station{background:#f7f8ff;color:#222b52;border-radius:29px;padding:25px;box-shadow:0 25px 65px #040b2c75}
-.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
-.subject{display:flex;flex-direction:column;min-width:0;min-height:268px;padding:19px;border-radius:23px;text-decoration:none;border:2px solid transparent;box-shadow:0 6px 25px #28335412;transition:transform .15s ease,box-shadow .15s ease}
-.subject:hover{transform:translateY(-4px);box-shadow:0 14px 30px #26315424}
-.subject.gdcd{background:linear-gradient(150deg,#fff0f1,#ffe0ea);border-color:#ffc4d7}
-.subject.lsdl{background:linear-gradient(150deg,#e6f3ff,#d9eaff);border-color:#c0defd}
-.subject.eng{background:linear-gradient(150deg,#eafff4,#d8f8e7);border-color:#b8eed6}
-.subject.engbook{background:linear-gradient(150deg,#fff7df,#ffecd0);border-color:#f8d6aa}
-.engbook .play{background:#a06516}
-.emoji{display:grid;place-items:center;width:68px;height:68px;background:#ffffffb5;border-radius:21px;font-size:35px;margin-bottom:19px;box-shadow:0 4px 13px #27326a0d}
-h2{margin:0;font-size:clamp(20px,2.6vw,24px);font-weight:860;letter-spacing:-.035em;line-height:1.24;flex:1}
-.play{display:flex;align-items:center;justify-content:space-between;gap:10px;color:#fff;border-radius:13px;padding:13px 15px;font-size:15px;font-weight:850;margin-top:19px;min-height:49px}
-.gdcd .play{background:#cc4770}.lsdl .play{background:#2476b9}.eng .play{background:#1b916a}
-.play .arrow{font-size:23px;line-height:1}
-@media(max-width:720px){main{padding:19px 13px calc(35px + env(safe-area-inset-bottom))}.hero{margin:25px auto 25px}.station{padding:14px;border-radius:23px}.grid{grid-template-columns:1fr;gap:12px}.subject{min-height:auto;padding:16px;display:grid;grid-template-columns:64px minmax(0,1fr);column-gap:14px;align-items:center}.emoji{width:62px;height:62px;font-size:32px;margin:0;grid-row:1/3}.subject h2{grid-column:2;font-size:20px}.subject .play{grid-column:1/3;margin-top:15px}.brand{font-size:11px}}
-@media(min-width:721px) and (max-width:840px){.station{padding:16px}.subject{padding:15px}.emoji{width:61px;height:61px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.subject{transition:none}.subject:hover{transform:none}}
-#playstats-gate{position:fixed;inset:0;z-index:2147483646;display:grid;place-items:center;padding:20px;background:rgba(9,18,42,.9);color:#17233d;overflow:auto}
-#playstats-gate .playstats-panel{background:#fff;border-radius:20px;padding:24px;width:min(100%,440px);box-shadow:0 20px 70px rgba(0,0,0,.26);font-family:system-ui,-apple-system,'Segoe UI',sans-serif;text-align:left}
-#playstats-gate h2{font-size:23px;font-weight:800;line-height:1.3;color:#182447;margin:0 0 8px}
-#playstats-gate p{font-size:14px;color:#495670;line-height:1.5;margin:8px 0 16px}
-#playstats-gate label{display:block;font-weight:700;color:#24354f;font-size:14px;margin:13px 0 6px}
-#playstats-gate input{display:block;width:100%;font-family:inherit;font-size:16px;border:1px solid #b9c9df;border-radius:11px;padding:12px;background:#fff;color:#17233d}
-#playstats-gate button{margin-top:14px;width:100%;border:0;border-radius:12px;padding:14px;background:#1560bd;color:#fff;font-weight:800;font-family:inherit;font-size:16px;min-height:48px;cursor:pointer}
-#playstats-gate .playstats-privacy{font-size:12px;color:#596781;margin-top:14px}
-.player-small{text-align:center;font-size:13px;color:#e0e9ff;margin:18px 0 0}.player-small button{font:inherit;border:1px solid #ffffff60;background:#ffffff20;color:#fff;border-radius:9px;padding:5px 10px;margin-left:6px;cursor:pointer}
+:root{font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:#1d3350;background:#f1f6fd;font-synthesis:none}*{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(circle at 50% 0%,#e0f1ff,#f4f7ff 52%,#f6f9fc)}a{text-decoration:none;color:inherit}button,input{font:inherit}button{cursor:pointer}button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #eba72c;outline-offset:3px}.shell{max-width:1040px;margin:auto;padding:25px 20px 65px}.top{display:flex;align-items:center;justify-content:space-between;gap:12px;font-weight:840;color:#496784;letter-spacing:.03em;font-size:12px}.school{display:flex;align-items:center;gap:10px}.school em{font-style:normal;background:#dff8f3;border:1px solid #c5ece5;color:#087865;border-radius:11px;width:38px;height:38px;display:grid;place-items:center;font-size:22px}.tiny{background:white;border:1px solid #dbe5f2;padding:9px 11px;border-radius:100px;white-space:nowrap}.hero{text-align:center;padding:36px 8px 27px}.sup{font-size:12px;color:#068774;background:#e5fcf4;border:1px solid #c4efe0;padding:9px 13px;display:inline-block;border-radius:40px;font-weight:900;letter-spacing:.08em}.hero h1{font-size:clamp(35px,6vw,58px);line-height:1.07;letter-spacing:-.06em;margin:16px 0 12px;color:#172a53}.hero h1 span{color:#078a88}.hero p{font-size:15px;color:#647796;line-height:1.65;margin:0 auto;max-width:610px}.station{background:#fff;padding:25px;border-radius:26px;border:1px solid #e1e9f3;box-shadow:0 18px 55px #233d6520}.station-head{display:flex;justify-content:space-between;gap:16px;align-items:center;margin-bottom:18px}.station-head h2{font-size:21px;letter-spacing:-.035em;margin:0}.count{color:#087965;border-radius:99px;padding:8px 12px;font-size:12px;font-weight:850;background:#e8fbf6;white-space:nowrap}.tools{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:18px}.search{flex:1 1 280px;display:flex;align-items:center;gap:10px;border:1.5px solid #d8e4ef;background:#f9fbff;border-radius:13px;padding:0 14px;min-height:49px}.search span{font-size:18px;color:#8c9bb1}.search input{border:0;outline:0;background:transparent;width:100%;font-size:15px;color:#254566}.search:focus-within{border-color:#21b69b;background:#fff}.filter{border:1px solid #dbe6f0;background:#f5f9fc;color:#536c88;border-radius:12px;min-height:46px;padding:10px 13px;font-size:13px;font-weight:760}.filter.active{border-color:#007d78;background:#dcf7ee;color:#006e60}.game-list{display:flex;flex-direction:column;gap:11px}.game-row{display:grid;grid-template-columns:66px minmax(0,1fr) auto auto;align-items:center;gap:19px;padding:15px 18px;border-radius:17px;border:1.5px solid #e1e9f3;background:#fff;box-shadow:0 4px 14px #1d3e6008;transition:transform .14s ease,border-color .14s ease,box-shadow .14s ease;min-height:92px}.game-row:hover{transform:translateX(3px);border-color:#75cdbf;box-shadow:0 9px 21px #18375217}.game-row[hidden]{display:none}.avatar{width:65px;height:65px;display:grid;place-items:center;border-radius:17px;font-size:31px;flex-shrink:0}.gdcd .avatar{background:#ffe8ef}.lsdl .avatar{background:#e5efff}.khtn .avatar{background:#dffaf2}.eng .avatar{background:#fff1dc}.engbook .avatar{background:#f1e9ff}.name h3{margin:0 0 7px;font-size:18px;color:#192f4f;font-weight:870;line-height:1.35;letter-spacing:-.02em}.name p{color:#62758f;font-size:13px;line-height:1.5;margin:0}.game-label{background:#eef6ff;color:#537399;border:1px solid #e0eafd;padding:8px 10px;border-radius:10px;font-size:11px;font-weight:830;white-space:nowrap}.game-row.engbook .game-label{background:#f5efff;color:#78539d}.game-row.khtn .game-label{background:#e2fbf2;color:#08755c}.launch{background:#173a70;color:#fff;padding:12px 15px;border-radius:12px;min-height:46px;display:flex;align-items:center;justify-content:center;gap:9px;font-weight:840;font-size:13px;white-space:nowrap}.game-row:hover .launch{background:#047a6c}.empty{padding:35px 15px;text-align:center;color:#6c8098;background:#f8fbfe;border-radius:15px;border:1px dashed #cbd8e7}.lower{color:#7c89a1;font-size:13px;text-align:center;line-height:1.7;margin-top:22px}.player{display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;margin:22px auto 0;color:#47617b;font-size:13px}.player button{border:1px solid #bfdbdf;background:#e8fcf5;color:#087260;border-radius:9px;padding:8px 12px;font-size:12px;font-weight:800}#playstats-gate{position:fixed;inset:0;z-index:2147483646;display:grid;place-items:center;padding:20px;background:#0b173edc;overflow:auto}#playstats-gate .playstats-panel{background:#fff;color:#162846;padding:26px;border-radius:22px;max-width:430px;width:100%;box-shadow:0 15px 60px #0004}#playstats-gate h2{font-size:23px;margin:0}#playstats-gate p{line-height:1.7;color:#66748f;font-size:14px}#playstats-gate label{display:block;margin:11px 0 6px;font-weight:800;font-size:13px}#playstats-gate input{width:100%;padding:12px;border-radius:12px;border:1px solid #bfcde2}#playstats-gate button{display:block;margin-top:15px;padding:13px;border:0;background:#0b9381;color:#fff;width:100%;border-radius:13px;font-weight:850}
+@media(max-width:750px){.shell{padding:19px 12px 48px}.station{padding:16px;border-radius:19px}.game-row{grid-template-columns:53px minmax(0,1fr) auto;gap:12px;padding:13px;min-height:80px}.avatar{width:51px;height:51px;border-radius:13px;font-size:26px}.name h3{font-size:16px;margin-bottom:4px}.name p{font-size:12px}.game-label{display:none}.launch{padding:12px;font-size:0;min-width:43px;min-height:43px}.launch .arr{font-size:19px}.hero{padding:27px 2px 23px}.tools{gap:7px}.filter{padding:8px 10px;font-size:12px;min-height:39px}.station-head h2{font-size:18px}}
+@media(max-width:380px){.game-row{grid-template-columns:44px 1fr 36px;gap:8px;padding:11px}.avatar{width:43px;height:43px;font-size:23px}.launch{min-width:36px;padding:8px}.name h3{font-size:15px}.name p{font-size:11px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{transition:none!important}}
 </style>
-<script src="./config.js"></script>
-<script src="./tracker.js"></script>
-
-</head>
-<body>
-<main>
-  <header class="brand"><span class="brand-icon" aria-hidden="true">🎒</span><span>TRƯỜNG THCS VĨNH AN</span></header>
-  <section class="hero" aria-labelledby="title">
-    <span class="eyebrow">ÔN TẬP GIỮA HỌC KÌ I · 2026–2027</span>
-    <h1 id="title">TRẠM MINI GAME <span>LỚP 7</span></h1>
-  </section>
-  <nav class="station" aria-label="Các mini game môn học">
-    <div class="grid">
-      <a class="subject gdcd" href="https://n2tnguyen051112-prog.github.io/GHK_I_GDCD_7/" aria-label="Vào mini game Giáo dục công dân 7">
-        <span class="emoji" aria-hidden="true">🤝</span>
-        <h2>Giáo dục công dân 7</h2>
-        <span class="play">Vào chơi <span class="arrow" aria-hidden="true">→</span></span>
-      </a>
-      <a class="subject lsdl" href="https://n2tnguyen051112-prog.github.io/GHK_I_LSDL_7/" aria-label="Vào mini game Lịch sử – Địa lí 7">
-        <span class="emoji" aria-hidden="true">🌍</span>
-        <h2>Lịch sử – Địa lí 7</h2>
-        <span class="play">Vào chơi <span class="arrow" aria-hidden="true">→</span></span>
-      </a>
-      <a class="subject eng" href="https://n2tnguyen051112-prog.github.io/GHK_I_TIENG_ANH_7/" aria-label="Vào mini game Tiếng Anh 7">
-        <span class="emoji" aria-hidden="true">🎧</span>
-        <h2>Tiếng Anh 7</h2>
-        <span class="play">Vào chơi <span class="arrow" aria-hidden="true">→</span></span>
-      </a>
-      <a class="subject engbook" href="https://n2tnguyen051112-prog.github.io/TIENG_ANH_7_SGK/" aria-label="Vào học Tiếng Anh 7 theo từng Unit sách giáo khoa">
-        <span class="emoji" aria-hidden="true">📚</span>
-        <h2>Tiếng Anh 7 – Học theo SGK</h2>
-        <span class="play">Vào học <span class="arrow" aria-hidden="true">→</span></span>
-      </a>
-    </div>
-  </nav>
-  <p class="player-small"><span id="player-label"></span> <button id="change-player" type="button">Đổi tên</button></p>
-</main>
-</body>
-</html>
+<script src="./config.js"></script><script src="./tracker.js"></script>
+</head><body><main class="shell"><div class="top"><div class="school"><em>🎒</em><span>TRƯỜNG THCS VĨNH AN</span></div><span class="tiny">NĂM HỌC 2026–2027</span></div>
+<section class="hero"><span class="sup">HỌC THẬT VUI · LUYỆN THẬT GIỎI</span><h1>TRẠM <span>MINI GAME</span><br>LỚP 7</h1><p>Mỗi môn học là một điểm đến. Chọn trò chơi, ôn tập theo lộ trình và thử thách bản thân mỗi ngày.</p></section>
+<section class="station" aria-label="Danh sách mini game"><div class="station-head"><h2>🎮 Danh sách trò chơi</h2><span class="count" id="count">5 mini game</span></div><div class="tools"><label class="search" aria-label="Tìm trò chơi"><span aria-hidden="true">⌕</span><input id="search" placeholder="Tìm môn học hoặc nội dung ôn tập..." autocomplete="off"></label><button class="filter active" type="button" data-kind="all">Tất cả</button><button class="filter" type="button" data-kind="exam">Giữa kỳ I</button><button class="filter" type="button" data-kind="book">Theo SGK</button></div><div class="game-list" id="game-list">
+<a class="game-row gdcd" data-kind="exam" data-search="giáo dục công dân gdcd kỹ năng sống kiểm tra giữa kỳ" href="https://n2tnguyen051112-prog.github.io/GHK_I_GDCD_7/"><span class="avatar" aria-hidden="true">🤝</span><span class="name"><h3>Giáo dục công dân 7</h3><p>Ôn tập kiến thức, tình huống và kĩ năng sống.</p></span><span class="game-label">GIỮA KỲ I</span><span class="launch">Vào chơi <span class="arr">→</span></span></a>
+<a class="game-row lsdl" data-kind="exam" data-search="lịch sử địa lí địa lý lsdl bản đồ kiểm tra giữa kỳ" href="https://n2tnguyen051112-prog.github.io/GHK_I_LSDL_7/"><span class="avatar" aria-hidden="true">🌍</span><span class="name"><h3>Lịch sử – Địa lí 7</h3><p>Khám phá lịch sử, bản đồ và kiến thức địa lí.</p></span><span class="game-label">GIỮA KỲ I</span><span class="launch">Vào chơi <span class="arr">→</span></span></a>
+<a class="game-row khtn" data-kind="exam" data-search="khoa học tự nhiên khtn sinh học vật lí vật lý hóa học nguyên tử tốc độ quang hợp giữa kỳ" href="https://n2tnguyen051112-prog.github.io/GHK_I_KHTN_7/"><span class="avatar" aria-hidden="true">🧬</span><span class="name"><h3>Khoa học tự nhiên 7</h3><p>36 câu trắc nghiệm, đúng–sai, tốc độ, đồ thị và bài nâng cao.</p></span><span class="game-label">MỚI · GIỮA KỲ I</span><span class="launch">Vào chơi <span class="arr">→</span></span></a>
+<a class="game-row eng" data-kind="exam" data-search="tiếng anh english từ vựng ngữ pháp giữa kỳ" href="https://n2tnguyen051112-prog.github.io/GHK_I_TIENG_ANH_7/"><span class="avatar" aria-hidden="true">🎧</span><span class="name"><h3>Tiếng Anh 7 – Ôn tập giữa kỳ</h3><p>Từ vựng, ngữ pháp và bài tập luyện kỹ năng.</p></span><span class="game-label">GIỮA KỲ I</span><span class="launch">Vào chơi <span class="arr">→</span></span></a>
+<a class="game-row engbook" data-kind="book" data-search="tiếng anh theo sách giáo khoa sgk unit global success english adventure" href="https://n2tnguyen051112-prog.github.io/TIENG_ANH_7_SGK/"><span class="avatar" aria-hidden="true">📚</span><span class="name"><h3>Tiếng Anh 7 – Học theo SGK</h3><p>Học từng Unit, ôn Review và luyện tập nâng cao.</p></span><span class="game-label">THEO SGK</span><span class="launch">Vào học <span class="arr">→</span></span></a>
+</div><div class="empty" id="empty" hidden>Chưa tìm thấy trò chơi phù hợp. Thử một từ khóa khác nhé!</div></section>
+<div class="player"><span id="player-label"></span><button type="button" id="change-player">Đổi tên người chơi</button></div><p class="lower">Trạm đang tiếp tục bổ sung các môn học khác · Mỗi mini game được bố trí một dòng để dễ tìm kiếm trên mọi thiết bị.</p></main>
+<script>
+(()=>{const rows=[...document.querySelectorAll('.game-row')],input=document.getElementById('search'),filters=[...document.querySelectorAll('.filter')],count=document.getElementById('count'),empty=document.getElementById('empty');let kind='all';const norm=s=>String(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/đ/g,'d');function apply(){const q=norm(input.value),matched=rows.filter(r=>{const ok=(kind==='all'||r.dataset.kind===kind)&&norm(r.innerText+' '+r.dataset.search).includes(q);r.hidden=!ok;return ok}).length;count.textContent=matched+' / '+rows.length+' mini game';empty.hidden=matched!==0;}input.addEventListener('input',apply);filters.forEach(b=>b.addEventListener('click',()=>{kind=b.dataset.kind;filters.forEach(f=>f.classList.toggle('active',f===b));apply()}));apply()})();
+</script></body></html>
